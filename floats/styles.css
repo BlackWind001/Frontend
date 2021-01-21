@@ -1,0 +1,67 @@
+.note {
+    color: red;
+}
+.float_wrapper {
+    margin: 0rem 1rem 5rem 1rem;
+    /*
+        Had to set the margin-top to 0 because margin-tops and margin-bottoms of 2 adjacent .float-wrappers were collapsing.
+        It was initially margin: 1rem 1rem 3rem 1rem; which I hoped would give 4rem but because of the collapse issue, it
+        didn't. This can be avoided by setting a Box Formatting Context as is described in:
+        https://www.smashingmagazine.com/2017/12/understanding-css-layout-block-formatting-context/
+    */
+    border: 2px solid;
+    border-color: black;
+}
+
+.float_wrapper--no_clear {
+    background-color: blueviolet;
+}
+
+.float {
+    height: 100px;
+    width: 100px;
+    background-color: burlywood;
+    float: left;
+}
+
+.float_wrapper--clear {
+    background-color: cadetblue;
+}
+
+.float_wrapper--clear p {
+    clear: both;
+}
+
+.float_wrapper--clear_fix_hack {
+    background-color: darkkhaki;
+}
+
+.float_wrapper--clear_fix_hack p::after {
+    content: ""; /*Reason for adding content. Watch from 1:50 on https://www.youtube.com/watch?v=LQsjNmkqUOc*/
+    display: block; /*This is necessary because the default display value for any element is inline.
+    We need it to be a block so it does not just continue from the previous line but creates a new block
+    underneath the floated box.*/
+    clear: both;
+}
+
+.float_wrapper--overflow {
+    background-color: indianred;
+    overflow: auto;
+}
+
+.float_wrapper--text_overflow {
+    background-color: slategray;
+}
+
+.float_wrapper--text_overflow p {
+    overflow: auto;
+}
+
+.float_wrapper--flow_root {
+    background-color: yellowgreen;
+    display: flow-root;
+}
+
+.float_wrapper--flow_root .text {
+    display: flow-root;
+}
