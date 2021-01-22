@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Positions</title>
+        <link rel="stylesheet" href="styles.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <p class="note">Check the logs for references</p>
+        <p style="text-align: center;" class="note">Click on the red boxes to toggle their fixed behaviour.</p>
+        <h2>Position: absolute; Position co-ordinates: no;</h2>
+        <div class="position_wrapper no_relative_wrapper">
+            <div class="box absolute">
+
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus optio eius placeat consectetur ut distinctio earum rem atque corrupti commodi voluptatem, consequatur et illo sit nihil delectus doloremque aut alias!</p>
+        </div>
+        <h2>Position: absolute; Position co-ordinates: yes;</h2>
+        <div class="position_wrapper no_relative_wrapper">
+            <div class="box absolute positioned_1 color_1">
+
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus optio eius placeat consectetur ut distinctio earum rem atque corrupti commodi voluptatem, consequatur et illo sit nihil delectus doloremque aut alias!</p>
+            <p class="note">The box for this wrapper can be found on the top-right corner of the page.</p>
+        </div>
+        <h2>Wrapper: relative; Position: absolute; Position co-ordinates: no;</h2>
+        <div class="position_wrapper relative relative_wrapper">
+            <div class="box absolute">
+
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error iusto officiis blanditiis quo a? Quos aut, adipisci eaque dolorem ipsa, veniam aperiam quae porro tempora rerum tenetur laboriosam minus quam!</p>            
+        </div>
+        <h2>Wrapper: relative; Position: absolute; Position co-ordinates: yes;</h2>
+        <div class="position_wrapper relative relative_wrapper">
+            <div class="box absolute positioned_1">
+
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error iusto officiis blanditiis quo a? Quos aut, adipisci eaque dolorem ipsa, veniam aperiam quae porro tempora rerum tenetur laboriosam minus quam!</p>            
+        </div>
+        <h2>Position: sticky; Position co-ordinates: no;</h2>
+        <div class="position_wrapper sticky_wrapper">
+            <div class="box sticky">
+
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error iusto officiis blanditiis quo a? Quos aut, adipisci eaque dolorem ipsa, veniam aperiam quae porro tempora rerum tenetur laboriosam minus quam!</p>            
+        </div>
+        <h2>Position: sticky; Position co-ordinates: yes; Position accessible: yes;</h2>
+        <div class="position_wrapper sticky_wrapper">
+            <div class="box sticky positioned_2">
+
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error iusto officiis blanditiis quo a? Quos aut, adipisci eaque dolorem ipsa, veniam aperiam quae porro tempora rerum tenetur laboriosam minus quam!</p>            
+        </div>
+        <h2>Position: sticky; Position co-ordinates: yes; Position accessible: no;</h2>
+        <div class="position_wrapper sticky_wrapper">
+            <div class="box sticky positioned_3">
+
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error iusto officiis blanditiis quo a? Quos aut, adipisci eaque dolorem ipsa, veniam aperiam quae porro tempora rerum tenetur laboriosam minus quam!</p>            
+        </div>
+        <h2>Position: fixed; Position co-ordinates: no;</h2>
+        <div class="position_wrapper fixed_wrapper">
+            <div class="box box1 fixed is_fixed">
+
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error iusto officiis blanditiis quo a? Quos aut, adipisci eaque dolorem ipsa, veniam aperiam quae porro tempora rerum tenetur laboriosam minus quam!</p>            
+            <p class="note">The box got a default top value of 1172px on Mozilla browser. Dunno why. It should have gotten top:0;</p>
+        </div>
+        <h2>Position: fixed; Position co-ordinates: yes;</h2>
+        <div class="position_wrapper fixed_wrapper">
+            <div class="box box1 fixed is_fixed positioned_2">
+
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error iusto officiis blanditiis quo a? Quos aut, adipisci eaque dolorem ipsa, veniam aperiam quae porro tempora rerum tenetur laboriosam minus quam!</p>
+        </div>
+        <h2>Wrapper: relative; Position: fixed; Position co-ordinates: yes;</h2>
+        <div class="position_wrapper fixed_wrapper relative">
+            <div class="box box1 fixed is_fixed positioned_1">
+
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error iusto officiis blanditiis quo a? Quos aut, adipisci eaque dolorem ipsa, veniam aperiam quae porro tempora rerum tenetur laboriosam minus quam!</p>
+            <p>TO uderrstand why the fixed box is not relative to the containing relative wrapper but to the entire window, read the Fixed positioning part in this linked article: <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning">Article Link</a></p>
+        </div>
+    </body>
+</html>
