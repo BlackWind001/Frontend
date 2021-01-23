@@ -1,0 +1,94 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/*Universal start*/
+.note {
+    color: red;
+}
+
+h2 {
+    text-align: center;
+}
+
+.rtl {
+    direction: rtl;
+}
+
+.flex_wrapper {
+    border: 2px solid;
+    border-color: black;
+    margin: 0rem 1rem 5rem 1rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.row_reverse {
+    flex-direction: row-reverse;
+}
+
+.col_reverse {
+    flex-direction: column-reverse;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: blanchedalmond;
+    border: 1px solid;
+    border-color: darkolivegreen;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/*Universal end*/
+
+.with_flex {
+    background-color: blue;
+}
+
+.with_flex.with_rtl {
+    background-color: darkorange;
+}
+
+.with_flex_col {
+    background-color: green;
+}
+
+.with_flex_row_reverse {
+    background-color: indianred;
+}
+
+.with_flex_col_reverse {
+    background-color: indigo;
+}
+
+.with_flex_basis_no_shrink .box1, .with_flex_basis_no_shrink_at_all .box1 {
+    flex-basis: 700px;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.with_flex_basis_no_shrink_at_all {
+    background-color: lightblue;
+}
+
+.with_flex_basis_no_shrink_at_all .box {
+    background-color: lightblue;
+}
+
+.with_flex_basis_no_shrink .box2, .with_flex_basis_no_shrink .box3 {
+    flex: 1 1 200px;
+}
+
+.with_flex_basis_no_shrink_at_all .box2, .with_flex_basis_no_shrink_at_all .box3 {
+    flex: 1 0 200px;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flex layout</title>
+        <link rel="stylesheet" href="./styles.css">
+        <script type="text/javascript" src="./script.js"></script>
+    </head>
+    <body>
+        <p class="note">Note: Check the console log for resources.</p>
+        <h2>Flex: yes; Flex-Direction: default (row); Direction: ltr</h2>
+        <div class="flex_wrapper flex with_flex">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+        <h2>Flex: yes; Flex-Direction: default (row); Direction: rtl</h2>
+        <div class="flex_wrapper flex with_flex rtl with_rtl">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+        <h2>Flex: yes; Flex-Direction: column; Direction: ltr & rtl</h2>
+        <div class="flex_wrapper flex with_flex_col col">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+        <div class="flex_wrapper flex with_flex_col col rtl">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+        <h2>Flex: yes; Flex-Direction: row-reverse; Direction: ltr & rtl</h2>
+        <div class="flex_wrapper flex with_flex_row_reverse row_reverse">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+        <div class="flex_wrapper flex with_flex_row_reverse row_reverse rtl">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+        </div>
+        <h2>Flex: yes; Flex-Direction: column-reverse; Direction: ltr & rtl</h2>
+        <div class="flex_wrapper flex with_flex_col_reverse col_reverse">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+        <div class="flex_wrapper flex with_flex_col_reverse col_reverse rtl">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+        </div>
+        <h2>Flex: yes; Flex-Direction: row; Flex-basis: 700px 1st, 200px 2nd and 3rd; Flex-shrink: no(on box1)</h2>
+        <div class="flex_wrapper with_flex_basis_no_shrink flex">
+            <div class="box box1">1</div>
+            <div class="box box2">2</div>
+            <div class="box box3">3</div>
+        </div>
+        <h2>Flex: yes; Flex-Direction: row; Flex-basis: 700px 1st, 200px 2nd and 3rd; Flex-shrink: no(on all)</h2>
+        <div class="flex_wrapper with_flex_basis_no_shrink_at_all  flex">
+            <div class="box box1">1</div>
+            <div class="box box2">2</div>
+            <div class="box box3">3</div>
+        </div>
+    </body>
+</html>
